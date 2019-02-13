@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/background_light</color>
+    <color name="colorPrimaryDark">@color/background_dark</color>
+    <color name="colorAccent">@color/background_accent</color>
+
+    <color name="background_dark">#394264</color>
+    <color name="background_medium">#464e6b</color>
+    <color name="background_light">#50597b</color>
+    <color name="background_accent">#cc324b</color>
+    <color name="item_default">#ffffff</color>
+    <color name="item_accent">#fcb150</color>
+
+    <color name="gold">#ffb300</color>
+    <color name="silver">#b4b4b4</color>
+    <color name="bronze">#aa551d</color>
+
+    <color name="danger">#cc324b</color>
+    <color name="warning">#ca780f</color>
+    <color name="success">#3ca613</color>
+
+    <color name="theme_night">#394264</color>
+    <color name="theme_day">#efd12b</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+</resources>

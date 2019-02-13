@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bdev.minesweeper.ui.views.common.SquareRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gameCellView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light">
+
+    <RelativeLayout
+        android:id="@+id/closedCellView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="1dp"
+        android:background="@color/background_dark">
+
+        <ImageView
+            android:id="@+id/flagView"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:src="@drawable/ic_flag"
+            android:tint="@color/item_accent"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/openedCellView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/bombView"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_bomb"
+            android:tint="@color/item_accent"/>
+
+        <TextView
+            android:id="@+id/minesAroundView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/item_default"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+</com.bdev.minesweeper.ui.views.common.SquareRelativeLayout>

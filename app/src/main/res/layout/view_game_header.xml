@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_dark">
+
+    <ImageView
+        android:id="@+id/menuView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:padding="20dp"
+        android:src="@drawable/ic_menu"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_bomb"
+                android:tint="@color/item_accent"/>
+
+            <TextView
+                android:id="@+id/bombsView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="99"
+                android:textSize="16sp"
+                android:textColor="@color/item_default"/>
+
+        </LinearLayout>
+
+        <com.bdev.minesweeper.ui.views.game.GameHeaderTimerView_
+            android:id="@+id/timerContainerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

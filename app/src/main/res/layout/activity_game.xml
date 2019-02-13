@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_light">
+
+        <com.bdev.minesweeper.ui.views.game.GameHeaderView_
+            android:id="@+id/headerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.bdev.minesweeper.ui.views.game.GameFlagToggleView_
+            android:id="@+id/gameFlagToggle1View"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"/>
+
+        <com.bdev.minesweeper.ui.views.game.GameFieldView_
+            android:id="@+id/gameFieldContainerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+        <com.bdev.minesweeper.ui.views.game.GameFlagToggleView_
+            android:id="@+id/gameFlagToggle2View"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+    <com.bdev.minesweeper.ui.views.game.GameLostView_
+        android:id="@+id/gameLostView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.bdev.minesweeper.ui.views.game.GameWonView_
+        android:id="@+id/gameWonView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+</RelativeLayout>
